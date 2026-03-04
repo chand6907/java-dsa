@@ -218,7 +218,10 @@ return val;
         right=right.next;
     }
     return true;
+
    }
+
+   
     public static void main(String args[]){
         linkedlist ll = new linkedlist();
         ll.print();
