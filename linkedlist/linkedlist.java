@@ -49,14 +49,14 @@ size++;
         tail = newNode;
     }
 
-   public void print(){
-     Node temp = head;
-    while(temp != null){
-        System.out.print(temp.data + "->");
-        temp = temp.next;
+    public void print(){
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.data + "->");
+            temp = temp.next;
+        }
+        System.out.println("null");
     }
-    System.out.println("null");
-   }
 
    //adding in middle 
    public void add (int idx , int data ){
