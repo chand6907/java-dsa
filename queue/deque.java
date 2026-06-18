@@ -16,3 +16,4 @@ public class deque {
         System.out.println(dq);
     }
 }
+
