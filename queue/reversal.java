@@ -27,4 +27,3 @@ public class reversal {
         System.out.println();
     }
 }
-//hiiheelloo
