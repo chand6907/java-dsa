@@ -1,0 +1,20 @@
+# Compiled files
+*.class
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+//git add . && git commit -m "today updates" && git push
+
+
+//git add .
+//git commit -m "daily progress"
+//git push
