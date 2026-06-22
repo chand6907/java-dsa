@@ -1,5 +1,5 @@
 🚀 Java DSA Mastery
-
+> Still cooking… turning logic into optimized solutions 🚀
 A comprehensive collection of Data Structures & Algorithms implemented in Java, built while mastering problem-solving, competitive programming, and technical interview preparation.
 <p align="center"> <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=java"> <img src="https://img.shields.io/badge/DSA-Interview%20Prep-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"> <img src="https://img.shields.io/badge/Level-Beginner%20to%20Advanced-red?style=for-the-badge"> </p>
 
@@ -54,12 +54,5 @@ Greedy
 Dynamic Programming
      ↓
 Advanced DSA
-
-
-Connect With Me
-GitHub: chand6907
-LinkedIn: (https://www.linkedin.com/in/chand6907/)
-Portfolio: (https://chand6907.github.io/portfolio/)
-Interview-oriented approaches
-Optimized solutions
-Continuous improvement
+Pro Tip:
+“Code. Solve. Grow. Repeat.”
