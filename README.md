@@ -54,5 +54,7 @@ Greedy
 Dynamic Programming
      ↓
 Advanced DSA
-Pro Tip:
+
+
+>Pro Tip:
 “Code. Solve. Grow. Repeat.”
