@@ -92,20 +92,20 @@
     // }
     // }
 
-
+package heap;
     import java.util.*;
 
-public class Classroom {
+public class classroom {
     static class Heap {
         ArrayList<Integer> arr = new ArrayList<>();
 
-        public void add(int data) {
+        public void add(int data) { //o(logn)
             arr.add(data);
             int x = arr.size() - 1;
             int par = (x - 1) / 2;
-            while (x > 0 && arr.get(x) < arr.get(par)) {
+            while (x > 0 && arr.get( x) < arr.get(par)) {//o(logn)
                 int temp = arr.get(x);
-                arr.set(x, arr.get(par));
+                arr.set(x, arr.get(par)); 
                 arr.set(par, temp);
 
                 x = par;
@@ -126,7 +126,7 @@ public class Classroom {
         }
 
         // Used for array-based heap sort
-        public static void heapify(int[] arr, int i, int size) {
+        public static void heapify(int[] arr, int i, int size) {//o(logn)
             int left = 2 * i + 1;
             int right = 2 * i + 2;
             int minIdx = i;
@@ -202,6 +202,24 @@ public class Classroom {
             // Heapify from root
             heapify(0);
             return data;
+        }
+    }
+
+    public static void heapsort (int arr[]){
+
+        //1 build max hreap
+        int n = arr.length;
+        for (int i = n/2;i>0;i--){
+            heapify(arr,i,n);
+        }
+        //2push largest at end
+        for(int i = n-1;i>0;i--){
+            //swap largest first with the last 
+            int temp = arr[0];
+            arr[0]= arr[i];
+            arr[i]=temp;
+
+            heapify(arr,0,i);
         }
     }
 

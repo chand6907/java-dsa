@@ -1,3 +1,4 @@
+package heap;
 import java.util.*;
 public class weakestsoldier {
 
