@@ -37,14 +37,13 @@ public class primsalgo {
         graph[3].add(new Edge(3, 1, 40));
         graph[3].add(new Edge(3, 2, 50));
     }
-
+    //O(ELogE) E = edges, V = vertices
     // Prim's Algorithm
     public static void prims(ArrayList<Edge> graph[]) {
 
         boolean vis[] = new boolean[graph.length];
 
-        PriorityQueue<Edge> pq =
-                new PriorityQueue<>((a, b) -> a.weight - b.weight);
+        PriorityQueue<Edge> pq = new PriorityQueue<>((a, b) -> a.weight - b.weight);
 
         // Starting vertex = 0
         pq.add(new Edge(0, 0, 0));
