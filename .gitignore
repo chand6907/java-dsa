@@ -13,7 +13,7 @@
 Thumbs.db
 
 //git add . && git commit -m "today updates" && git push
-
+//git push origin main
 
 //git add .
 //git commit -m "daily progress"
