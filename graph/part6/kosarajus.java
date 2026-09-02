@@ -123,3 +123,103 @@ public class kosarajus {
         kosaraju(graph,V);
     }
 }
+
+
+
+// import java.util.*;
+
+// public class Kosaraju {
+
+//     static void dfs(int node, ArrayList<ArrayList<Integer>> graph,
+//                     boolean[] visited, Stack<Integer> stack) {
+
+//         visited[node] = true;
+
+//         for (int neighbor : graph.get(node)) {
+//             if (!visited[neighbor]) {
+//                 dfs(neighbor, graph, visited, stack);
+//             }
+//         }
+
+//         // Store according to finishing time
+//         stack.push(node);
+//     }
+
+//     static void reverseDFS(int node,
+//                            ArrayList<ArrayList<Integer>> reverseGraph,
+//                            boolean[] visited) {
+
+//         visited[node] = true;
+
+//         System.out.print(node + " ");
+
+//         for (int neighbor : reverseGraph.get(node)) {
+//             if (!visited[neighbor]) {
+//                 reverseDFS(neighbor, reverseGraph, visited);
+//             }
+//         }
+//     }
+
+//     static void kosaraju(int V, ArrayList<ArrayList<Integer>> graph) {
+
+//         // Step 1: DFS on original graph
+//         boolean[] visited = new boolean[V];
+//         Stack<Integer> stack = new Stack<>();
+
+//         for (int i = 0; i < V; i++) {
+//             if (!visited[i]) {
+//                 dfs(i, graph, visited, stack);
+//             }
+//         }
+
+//         // Step 2: Create transpose graph
+//         ArrayList<ArrayList<Integer>> reverseGraph =
+//                 new ArrayList<>();
+
+//         for (int i = 0; i < V; i++) {
+//             reverseGraph.add(new ArrayList<>());
+//         }
+
+//         for (int u = 0; u < V; u++) {
+//             for (int v : graph.get(u)) {
+//                 reverseGraph.get(v).add(u);
+//             }
+//         }
+
+//         // Step 3: DFS on transpose graph
+//         Arrays.fill(visited, false);
+
+//         System.out.println("Strongly Connected Components:");
+
+//         while (!stack.isEmpty()) {
+
+//             int node = stack.pop();
+
+//             if (!visited[node]) {
+//                 reverseDFS(node, reverseGraph, visited);
+//                 System.out.println();
+//             }
+//         }
+//     }
+
+//     public static void main(String[] args) {
+
+//         int V = 5;
+
+//         ArrayList<ArrayList<Integer>> graph =
+//                 new ArrayList<>();
+
+//         for (int i = 0; i < V; i++) {
+//             graph.add(new ArrayList<>());
+//         }
+
+//         graph.get(0).add(2);
+//         graph.get(2).add(1);
+//         graph.get(1).add(0);
+
+//         graph.get(0).add(3);
+//         graph.get(3).add(4);
+
+//         kosaraju(V, graph);
+//     }
+// }
