@@ -26,7 +26,7 @@
 //         subarr(nums);
 
 //         for (int i = 0 ; i<nums.length ; i++){
-//            int sum  = sum + nums[i];
+//            int sum  = + nums[i];
 //             System.out.println("sum"+sum);
 //         }
 //     }
